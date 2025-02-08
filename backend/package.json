@@ -1,1 +1,10 @@
-{ "name": "backend", "dependencies": { "express": "^4.18.2" } }
+{
+  "name": "backend",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
+  }
+}
