@@ -1,7 +1,9 @@
 {
   "name": "frontend",
+  "type": "module",
   "dependencies": {
     "@shadcn/ui": "^0.0.4",
+    "@tailwindcss/postcss": "^4.0.4",
     "lucide-react": "^0.475.0",
     "qrcode.react": "^4.2.0",
     "react": "^18.2.0",
@@ -21,7 +23,9 @@
   "devDependencies": {
     "autoprefixer": "^10.4.20",
     "postcss": "^8.5.1",
-    "tailwindcss": "^4.0.4"
+    "tailwindcss": "^4.0.4",
+    "vite": "^4.0.0",
+    "@vitejs/plugin-react": "^1.0.0"
   },
   "browserslist": {
     "production": [

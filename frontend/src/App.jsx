@@ -1,13 +1,15 @@
+import React from 'react';
 import { useState, useEffect } from "react";
 import { io } from "socket.io-client";
 import { QRCodeCanvas } from "qrcode.react";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "../components/ui/button";
+import { Card, CardContent } from "../components/ui/card";
+
 
 
 const socket = io("http://localhost:5000"); // Adjust backend URL as needed
 
-export default function WhatsAppMonitor() {
+function WhatsAppMonitor() {
     const [qrCode, setQrCode] = useState(null);
     const [isLoggedIn, setIsLoggedIn] = useState(false);
     const [logs, setLogs] = useState([]);
@@ -98,3 +100,15 @@ export default function WhatsAppMonitor() {
         </div>
     );
 }
+
+function App() {
+  return (
+    <div className="App">
+      <h1 className="text-3xl font-bold underline">
+        Hello, world!
+      </h1>
+    </div>
+  );
+}
+
+export default WhatsAppMonitor;
