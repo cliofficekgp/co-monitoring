@@ -1,1 +1,0 @@
-// WhatsApp session management logic

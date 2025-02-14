@@ -1,1 +1,0 @@
-// SQLite log model
